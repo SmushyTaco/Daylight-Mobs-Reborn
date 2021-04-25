@@ -1,9 +1,9 @@
 {
   "required": true,
-  "package": "com.robertx22.daylight_mobs.mixins",
+  "package": "com.smushytaco.daylight_mobs_reborn.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MobEntityMixin"	
+    "MobEntityMixin"
   ],
   "client": [	
   ],
