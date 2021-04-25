@@ -1,1 +1,0 @@
-Stops mobs from burning in daylight

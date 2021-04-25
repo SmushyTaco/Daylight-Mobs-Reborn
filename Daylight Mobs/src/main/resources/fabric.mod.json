@@ -5,18 +5,15 @@
   "name": "Daylight Mobs",
   "description": "Stops mobs from burning in daylight.",
   "authors": [
-    "mcrobertx22"
+    "mcrobertx22 (Original Author)",
+    "SmushyTaco (Creator of Fork)"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://www.smushytaco.com/",
+    "sources": "https://github.com/realSmushyTaco/Daylight-Mobs/"
   },
-  "custom": {
-    "modmenu:api": true
-  },
-  "license": "",
+  "license": "MIT License",
   "icon": "icon.png",
-
   "environment": "*",
   "entrypoints": {
     "main":   ["com.robertx22.daylight_mobs.main.CommonInit"]		
@@ -24,14 +21,12 @@
   "mixins": [
     "daylight_mobs.mixins.json"
   ],
-
   "depends": {
-    "fabricloader": ">=0.9.0",
-    "minecraft": "1.16.1"
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.x"
   },
   "suggests": {
-    "age-of-exile": "*",
-	"balance-of-exile": "*"
+    "flamingo": "*"
   }
-  
 }
