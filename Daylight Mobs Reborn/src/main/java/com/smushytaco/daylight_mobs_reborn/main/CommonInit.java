@@ -1,10 +1,10 @@
-package com.robertx22.daylight_mobs.main;
+package com.smushytaco.daylight_mobs_reborn.main;
 
 import net.fabricmc.api.ModInitializer;
 
 public class CommonInit implements ModInitializer {
     @Override
     public void onInitialize() {
-        System.out.println("Daylight Mobs loaded.");
+        System.out.println("Daylight Mobs Reborn loaded.");
     }
 }

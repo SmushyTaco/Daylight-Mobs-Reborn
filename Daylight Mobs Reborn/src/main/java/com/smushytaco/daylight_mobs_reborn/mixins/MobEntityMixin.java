@@ -1,4 +1,4 @@
-package com.robertx22.daylight_mobs.mixins;
+package com.smushytaco.daylight_mobs_reborn.mixins;
 
 import net.minecraft.entity.mob.MobEntity;
 import org.spongepowered.asm.mixin.Mixin;

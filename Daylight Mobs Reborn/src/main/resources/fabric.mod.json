@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "daylight_mobs",
-  "version": "1.0.0",
-  "name": "Daylight Mobs",
+  "id": "daylight_mobs_reborn",
+  "version": "${version}",
+  "name": "Daylight Mobs Reborn",
   "description": "Stops mobs from burning in daylight.",
   "authors": [
     "mcrobertx22 (Original Author)",
@@ -16,10 +16,12 @@
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
-    "main":   ["com.robertx22.daylight_mobs.main.CommonInit"]		
+    "main":   [
+      "com.smushytaco.daylight_mobs_reborn.main.CommonInit"
+    ]
   },
   "mixins": [
-    "daylight_mobs.mixins.json"
+    "daylight_mobs-reborn.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.11.3",
