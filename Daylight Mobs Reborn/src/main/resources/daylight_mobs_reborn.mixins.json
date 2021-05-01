@@ -1,11 +1,9 @@
 {
   "required": true,
-  "package": "com.smushytaco.daylight_mobs_reborn.mixins",
+  "package": "com.smushytaco.daylight_mobs_reborn.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "MobEntityMixin"
-  ],
-  "client": [	
   ],
   "injectors": {
     "defaultRequire": 1
