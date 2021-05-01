@@ -3,32 +3,39 @@
   "id": "daylight_mobs_reborn",
   "version": "${version}",
   "name": "Daylight Mobs Reborn",
-  "description": "Stops mobs from burning in daylight.",
+  "description": "Stops mobs from burning in daylight (This can be disabled in the config).",
   "authors": [
     "mcrobertx22 (Original Author)",
     "SmushyTaco (Creator of Fork)"
   ],
   "contact": {
     "homepage": "https://www.smushytaco.com/",
-    "sources": "https://github.com/realSmushyTaco/Daylight-Mobs/"
+    "issues": "https://www.curseforge.com/minecraft/mc-mods/daylight-mobs-reborn/issues/",
+    "sources": "https://github.com/realSmushyTaco/Daylight-Mobs-Reborn/"
   },
   "license": "MIT License",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
-    "main":   [
-      "com.smushytaco.daylight_mobs_reborn.main.CommonInit"
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.smushytaco.daylight_mobs_reborn.DaylightMobsReborn"
+      }
+    ],
+    "modmenu": [
+      "com.smushytaco.daylight_mobs_reborn.configuration_support.ModMenuIntegration"
     ]
   },
   "mixins": [
-    "daylight_mobs-reborn.mixins.json"
+    "daylight_mobs_reborn.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.11.3",
     "fabric": "*",
-    "minecraft": "1.16.x"
-  },
-  "suggests": {
-    "flamingo": "*"
+    "fabric-language-kotlin": ">=1.5.0+kotlin.1.4.31",
+    "minecraft": "1.16.x",
+    "cloth-config2": ">=4.11.19",
+    "modmenu": ">=1.9.0+build.27"
   }
 }
