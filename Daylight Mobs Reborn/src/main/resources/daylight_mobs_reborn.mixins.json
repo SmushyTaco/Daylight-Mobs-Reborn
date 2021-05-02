@@ -1,9 +1,10 @@
 {
   "required": true,
-  "package": "com.smushytaco.daylight_mobs_reborn.mixin",
+  "package": "com.smushytaco.daylight_mobs_reborn.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MobEntityMixin"
+    "HostileEntityCanSpawnDuringDay",
+    "MobEntityDoesntBurnDuringDay"
   ],
   "injectors": {
     "defaultRequire": 1

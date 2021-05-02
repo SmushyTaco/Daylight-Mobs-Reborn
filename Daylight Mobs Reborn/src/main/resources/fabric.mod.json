@@ -3,7 +3,7 @@
   "id": "daylight_mobs_reborn",
   "version": "${version}",
   "name": "Daylight Mobs Reborn",
-  "description": "Stops mobs from burning in daylight (This can be disabled in the config).",
+  "description": "Stops mobs from burning in the daylight (This can be disabled in the config) and allows hostile mobs to spawn during the day (This is disabled by default and can be enabled in the config).",
   "authors": [
     "mcrobertx22 (Original Author)",
     "SmushyTaco (Creator of Fork)"
