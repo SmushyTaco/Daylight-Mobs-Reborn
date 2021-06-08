@@ -12,9 +12,9 @@ import java.util.Random;
 @Mixin(HostileEntity.class)
 public abstract class HostileEntityCanSpawnDuringDay {
     @Inject(method = "isSpawnDark", at = @At("RETURN"), cancellable = true)
-    private static void hookIsSpawnDark(ServerWorldAccess serverWorldAccess, BlockPos pos, Random random, CallbackInfoReturnable<Boolean> cir) {
+    private static void hookIsSpawnDark(ServerWorldAccess world, BlockPos pos, Random random, CallbackInfoReturnable<Boolean> cir) {
         if (!DaylightMobsReborn.INSTANCE.getConfig().getHostileMobsSpawnDuringTheDay()) return;
-        cir.setReturnValue(serverWorldAccess.getLightLevel(pos, 10) <= random.nextInt(8));
+        cir.setReturnValue(world.getLightLevel(pos, 10) <= random.nextInt(8));
     }
     @Inject(method = "getPathfindingFavor", at = @At("RETURN"), cancellable = true)
     public void hookGetPathfindingFavor(BlockPos pos, WorldView world, CallbackInfoReturnable<Float> cir) {
