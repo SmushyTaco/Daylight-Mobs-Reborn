@@ -1,7 +1,7 @@
 {
   "required": true,
   "package": "com.smushytaco.daylight_mobs_reborn.mixins",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_16",
   "mixins": [
     "HostileEntityCanSpawnDuringDay",
     "MobEntityDoesntBurnDuringDay"
