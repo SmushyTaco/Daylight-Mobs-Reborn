@@ -12,7 +12,7 @@ import java.util.Random;
 @Mixin(HostileEntity.class)
 public abstract class HostileEntityCanSpawnDuringDay {
     @Inject(method = "isSpawnDark", at = @At("RETURN"), cancellable = true)
-    private static void hookIsSpawnDark(ServerWorldAccess world, BlockPos pos, Random random, CallbackInfoReturnable<Boolean> cir) {
+    private static void hookIsSpawnDark(ServerWorldAccess world, BlockPos pos, net.minecraft.util.math.random.Random random, CallbackInfoReturnable<Boolean> cir) {
         if (!DaylightMobsReborn.INSTANCE.getConfig().getHostileMobsSpawnDuringTheDay()) return;
         cir.setReturnValue(world.getLightLevel(pos, 10) <= random.nextInt(8));
     }
