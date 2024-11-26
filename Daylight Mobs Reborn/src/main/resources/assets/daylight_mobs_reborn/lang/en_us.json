@@ -1,5 +1,5 @@
 {
-  "text.autoconfig.daylight_mobs_reborn.title": "Daylight Mobs Reborn Configuration",
-  "text.autoconfig.daylight_mobs_reborn.option.mobsDontBurnDuringTheDay": "Mobs Don't Burn During The Day",
-  "text.autoconfig.daylight_mobs_reborn.option.hostileMobsSpawnDuringTheDay": "Hostile Mobs Spawn During The Day"
+  "text.config.daylight_mobs_reborn.title": "Daylight Mobs Reborn Configuration",
+  "text.config.daylight_mobs_reborn.option.mobsDontBurnDuringTheDay": "Mobs Don't Burn During The Day",
+  "text.config.daylight_mobs_reborn.option.hostileMobsSpawnDuringTheDay": "Hostile Mobs Spawn During The Day"
 }
