@@ -22,9 +22,6 @@
         "adapter": "kotlin",
         "value": "com.smushytaco.daylight_mobs_reborn.DaylightMobsReborn"
       }
-    ],
-    "modmenu": [
-      "com.smushytaco.daylight_mobs_reborn.configuration_support.ModMenuIntegration"
     ]
   },
   "mixins": [
@@ -36,9 +33,6 @@
     "fabric-language-kotlin": ">=${fabric_language_kotlin}",
     "minecraft": ">=${minecraft}",
     "java": ">=${java}",
-    "cloth-config2": ">=${clothconfig}"
-  },
-  "suggests": {
-    "modmenu": ">=${modmenu}"
+    "owo": ">=${owo_version}"
   }
 }
