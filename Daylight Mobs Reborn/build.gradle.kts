@@ -115,20 +115,20 @@ tasks {
         disableVersionDetection()
         apiToken = env.fetch("CURSEFORGE_TOKEN", "")
         val file = upload(475856, remapJar)
-        file.displayName = "[${project.extra["minecraft_version"] as String}] Daylight Mobs Reborn"
+        file.displayName = "[${minecraftVersion.get()}] Daylight Mobs Reborn"
         file.addEnvironment("Client", "Server")
         file.changelog = ""
         file.releaseType = "release"
         file.addModLoader("Fabric")
-        file.addGameVersion(project.extra["minecraft_version"] as String)
+        file.addGameVersion(minecraftVersion.get())
     }
 }
 modrinth {
     token.set(env.fetch("MODRINTH_TOKEN", ""))
     projectId.set("daylight-mobs-reborn")
     uploadFile.set(tasks.remapJar)
-    gameVersions.addAll(project.extra["minecraft_version"] as String)
-    versionName.set("[${project.extra["minecraft_version"] as String}] Daylight Mobs Reborn")
+    gameVersions.addAll(minecraftVersion.get())
+    versionName.set("[${minecraftVersion.get()}] Daylight Mobs Reborn")
     dependencies {
         required.project("fabric-api", "fabric-language-kotlin", "owo-lib")
         optional.project("modmenu")
