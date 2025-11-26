@@ -13,7 +13,7 @@
     "issues": "https://www.curseforge.com/minecraft/mc-mods/daylight-mobs-reborn/issues/",
     "sources": "https://github.com/SmushyTaco/Daylight-Mobs-Reborn/"
   },
-  "license": "MIT License",
+  "license": "Apache-2.0",
   "icon": "assets/daylight_mobs_reborn/icon.png",
   "environment": "*",
   "entrypoints": {
