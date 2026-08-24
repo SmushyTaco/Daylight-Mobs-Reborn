@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(Monster.class)
 public abstract class HostileEntityCanSpawnDuringDay {
     @ModifyReturnValue(method = "isDarkEnoughToSpawn", at = @At("RETURN"))
-    private static boolean hookIsSpawnDark(boolean original, ServerLevelAccessor world, BlockPos pos, RandomSource random) { return !DaylightMobsReborn.INSTANCE.getConfig().getHostileMobsSpawnDuringTheDay() ? original : world.getMaxLocalRawBrightness(pos, 10) <= random.nextInt(8); }
+    private static boolean hookIsSpawnDark(boolean original, ServerLevelAccessor level, BlockPos pos, RandomSource random) { return !DaylightMobsReborn.INSTANCE.getConfig().getHostileMobsSpawnDuringTheDay() ? original : level.getMaxLocalRawBrightness(pos, 10) <= random.nextInt(8); }
     @ModifyReturnValue(method = "getWalkTargetValue", at = @At("RETURN"))
-    public float hookGetPathfindingFavor(float original, BlockPos pos, LevelReader world) { return !DaylightMobsReborn.INSTANCE.getConfig().getHostileMobsSpawnDuringTheDay() ? original : 1.0F; }
+    public float hookGetPathfindingFavor(float original, BlockPos pos, LevelReader level) { return !DaylightMobsReborn.INSTANCE.getConfig().getHostileMobsSpawnDuringTheDay() ? original : 1.0F; }
 }
